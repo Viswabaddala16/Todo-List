@@ -1,38 +1,78 @@
+body{
+    background-color: aqua;
+}
+input:focus{
+    outline: none;
+}
+input{
+    background-color: lightgrey;
+    border: none;
+    height: 1.5rem;
+    width: 100%;   
+}
+.task-form input {
+    width: 60%;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    text-align: center;
+    margin-top: 2rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .task-form {
+    margin-bottom: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
   }
+  
+  .task-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-left: 3rem;
+  }
+  
+  button {
+    padding: 0.25rem 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    
+  }
+/* App.css */
+.task-list-circle{
+    list-style-type: circle; /* Change to 'square' or 'disc' for different styles */
+    padding-left: 20px; /* Add some left padding to create space for the bullet */
 }
+  
+.task-list-circle li{
+    margin-bottom: 5px;
+}
+  
+.add{
+    background: blue;
+    color: white;
+    border: none;
+    height: 1.5rem;
+}
+.delete{
+    background-color: red;
+    color: white;
+}
+.edit{
+    background-color: yellow;
+    /* color : white; */
+}
+.edit:hover, .delete:hover {
+    background-color: #d0d0d0;
+  }
+.edit, .delete {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+  
+ 
